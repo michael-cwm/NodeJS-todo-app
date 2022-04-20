@@ -1,0 +1,186 @@
+*{
+    color: #EEEEEE;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+body{
+    background-color: #222831;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 55%;
+    
+}
+
+.listcontainer{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #393E46;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.listStyle{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    margin-left: -10px;
+    background-color: #EEEEEE;
+    height: 30px;
+    border-radius: 10px;
+    list-style: none;
+    color: black;
+    padding: 5px;
+    padding-left: 20px;
+    /* font-weight: 700; */
+    transition: all .2s ease-in-out;
+
+}
+
+.listStyle:hover{
+    transform:scale(1.02);
+}
+
+a{
+    text-decoration: none;
+}
+
+.btnContainerDelete,
+.btnContainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    height: 53px;
+}
+
+.btnContainerDelete{
+    justify-content: space-between;
+}
+
+p{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    gap: 10px;
+    font-size: 12pt;
+}
+
+.checkbox{
+    height: 15px;
+    width: 15px;
+}
+
+.saveBtn,
+.backBtn,
+.submitBtn{
+    background-color: #FD7014;
+    color: #EEEEEE;
+    border: none;
+    border-radius: 10px;
+    height: 100%;
+    width: 120px;
+    font-size: 14pt;
+    /* font-weight: bold; */
+    /* margin-top: 15px; */
+    transition: all 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.backBtn{
+    /* margin-right: 50px; */
+    background-color: #222831;
+}
+
+form{
+    height: 40px;
+}
+
+.saveBtn:hover,
+.backBtn:hover,
+.submitBtn:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.newTodoInput,
+.removeContainer,
+.listSingle{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    margin-left: -10px;
+    background-color: #EEEEEE;
+    height: 30px;
+    border-radius: 10px;
+    list-style: none;
+    color: black;
+    padding: 5px;
+    padding-left: 20px;
+    font-size: 12pt;   
+}
+
+.newTodoInput{
+    width: 80%;
+}
+
+h3,
+.removeContainer{
+    margin-left: 20px;
+}
+
+.timeNdate{
+    margin-left: 35px;
+}
+
+.updateform {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.editInput{
+    width: 430px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    padding: 5px;
+    padding-left: 20px;
+    font-size: 12pt;
+}
+
+.newTodoContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.newTodoInput{
+    width: 455px;
+}
+
+.backContainer{
+    margin-right: 30px;
+}
+
+.todo.false {
+    text-decoration: none;
+  }
+  
+  .todo.true {
+    text-decoration: line-through;
+    text-decoration-color: black;
+  }
+
+.saveBtn{
+    background-color: #4a8cb8;
+}
+
+.saveForm{
+    display: flex;
+    width: 360px;
+}

@@ -1,0 +1,14 @@
+<div class="listwrapper"></div>
+    <ul>
+        {{#each todos}}
+            <a href="/todo/{{id}}" class="todo {{done}}"><li class="listStyle">{{description}}</li></a>
+        {{/each}}
+    </ul>
+
+    <div class="btnContainer">
+        <form action="/todo/ny">
+            <input type="submit" value="New" class="submitBtn">
+        </form>
+    </div>
+
+</div>

@@ -1,0 +1,37 @@
+<div class="listwrapper">
+    <ul>
+        <li class="listSingle">{{description}}</li>
+    </ul>
+
+    <p class="timeNdate">
+        Created:
+    {{created}}
+    </p>
+
+    <div class="btnContainer">
+
+        <div class="backContainer">
+            <form action="/">
+                <input type="submit" value="Back" class="backBtn">
+            </form>
+        </div>
+
+    <form action="/todo/{{id}}" class="saveForm" method="post">
+        <p class="pStyle"> Mark as done
+            <input class="checkbox" type="checkbox" value="true" name="done" {{#if todo.done}}checked{{/if}}>
+        </p>
+        <input type="submit" value="Save" class="saveBtn">
+    </form>
+
+    <form action="/todo/{{id}}/redigera">
+        <input type="submit" value="Edit" class="submitBtn">
+    </form>
+
+    <form action="/todo/{{id}}/ta-bort" class="removeBtn">
+        <input type="submit" value="Remove" class="submitBtn">
+    </form>
+
+    </div>
+
+</div>
+

@@ -1,0 +1,17 @@
+
+<p>
+    <h3>Confirm removal</h3>
+    <div class="removeContainer">
+        {{description}}
+    </div> 
+</p>
+
+<div class="btnContainerDelete">
+    <form action="/">
+        <input type="submit" value="Back" class="backBtn">
+    </form>
+
+    <form action="/todo/{{id}}/ta-bort" method="post">
+        <input type="submit" value="Remove" class="submitBtn">
+    </form>
+</div>
